@@ -24,8 +24,8 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   flutter_image_editor: ^1.2.0
   image_editor:
-  extended_image: ^0.6.5
-  image_picker: ^0.6.2
+  extended_image: ^0.6.7
+  image_picker: ^0.6.2+1
   flutter_opencv:
   flutter_drag_scale:
     git: https://github.com/LiuC520/flutter_drag_scale.git
@@ -33,6 +33,11 @@ dependencies:
   shimmer: ^1.0.1
   flutter_spinkit: ^4.0.0
   animated_text_kit: ^1.3.1
+  gesture_password: ^0.0.6
+  flutter_page_indicator:
+  transformer_page_view:
+  azlistview: ^0.1.2
+  lpinyin: ^1.0.7
 
 dev_dependencies:
   flutter_test:
@@ -69,6 +74,8 @@ flutter:
     - assets/image/demo6/
     - assets/image/demo12/
     - assets/image/demo13/
+    - assets/data/
+
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

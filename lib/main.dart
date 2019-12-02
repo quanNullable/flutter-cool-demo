@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import 'custom_route.dart';
@@ -8,6 +9,9 @@ import 'demo12/demo_page12.dart';
 import 'demo13/demo_page13.dart';
 import 'demo14/demo_page14.dart';
 import 'demo15/demo_page15.dart';
+import 'demo16/demo_page16.dart';
+import 'demo17/demo_page17.dart';
+import 'demo18/demo_page18.dart';
 import 'demo2/demo_page2.dart';
 import 'demo3/demo_page3.dart';
 import 'demo4/demo_page4.dart';
@@ -53,100 +57,122 @@ class MyHomePage extends StatelessWidget {
         title: Text(title),
       ),
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            OutlineButton(
-              onPressed: () => _toPage(context, 1),
-              child: Text(
-                '对比度、亮度、旋转(native)',
+        child: SingleChildScrollView(
+          padding: EdgeInsets.only(bottom: 30),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: <Widget>[
+              OutlineButton(
+                onPressed: () => _toPage(context, 1),
+                child: Text(
+                  '对比度、亮度、旋转(native)',
+                ),
               ),
-            ),
-            OutlineButton(
-              onPressed: () => _toPage(context, 2),
-              child: Text(
-                '裁剪、翻转、旋转(native)',
+              OutlineButton(
+                onPressed: () => _toPage(context, 2),
+                child: Text(
+                  '裁剪、翻转、旋转(native)',
+                ),
               ),
-            ),
-            OutlineButton(
-              onPressed: () => _toPage(context, 3),
-              child: Text(
-                '涂鸦、水印(flutter)',
+              OutlineButton(
+                onPressed: () => _toPage(context, 3),
+                child: Text(
+                  '涂鸦、水印(flutter)',
+                ),
               ),
-            ),
-            OutlineButton(
-              onPressed: () => _toPage(context, 4),
-              child: Text(
-                'open cv(插件未完成)',
+              OutlineButton(
+                onPressed: () => _toPage(context, 4),
+                child: Text(
+                  'open cv(插件未完成)',
+                ),
               ),
-            ),
-            OutlineButton(
-              onPressed: () => _toPage(context, 5),
-              child: Text(
-                '画中画(flutter)',
+              OutlineButton(
+                onPressed: () => _toPage(context, 5),
+                child: Text(
+                  '画中画(flutter)',
+                ),
               ),
-            ),
-            OutlineButton(
-              onPressed: () => _toPage(context, 6),
-              child: Text(
-                'flutter effects',
+              OutlineButton(
+                onPressed: () => _toPage(context, 6),
+                child: Text(
+                  'flutter effects',
+                ),
               ),
-            ),
-            OutlineButton(
-              onPressed: () => _toPage(context, 7),
-              child: Text(
-                '拖拽、放大',
+              OutlineButton(
+                onPressed: () => _toPage(context, 7),
+                child: Text(
+                  '拖拽、放大',
+                ),
               ),
-            ),
-            OutlineButton(
-              onPressed: () => _toPage(context, 8),
-              child: Text(
-                '其他',
+              OutlineButton(
+                onPressed: () => _toPage(context, 8),
+                child: Text(
+                  '其他',
+                ),
               ),
-            ),
-            OutlineButton(
-              onPressed: () => _toPage(context, 9),
-              child: Text(
-                '个性涂鸦',
+              OutlineButton(
+                onPressed: () => _toPage(context, 9),
+                child: Text(
+                  '个性涂鸦',
+                ),
               ),
-            ),
-            OutlineButton(
-              onPressed: () => _toPage(context, 10),
-              child: Text(
-                '其他2',
+              OutlineButton(
+                onPressed: () => _toPage(context, 10),
+                child: Text(
+                  '其他2',
+                ),
               ),
-            ),
-            OutlineButton(
-              onPressed: () => _toPage(context, 11),
-              child: Text(
-                '动画',
+              OutlineButton(
+                onPressed: () => _toPage(context, 11),
+                child: Text(
+                  '动画',
+                ),
               ),
-            ),
-            OutlineButton(
-              onPressed: () => _toPage(context, 12),
-              child: Text(
-                '卡片切换动效',
+              OutlineButton(
+                onPressed: () => _toPage(context, 12),
+                child: Text(
+                  '卡片切换动效',
+                ),
               ),
-            ),
-            OutlineButton(
-              onPressed: () => _toPage(context, 13),
-              child: Text(
-                '扫光',
+              OutlineButton(
+                onPressed: () => _toPage(context, 13),
+                child: Text(
+                  '扫光',
+                ),
               ),
-            ),
-            OutlineButton(
-              onPressed: () => _toPage(context, 14),
-              child: Text(
-                'loading',
+              OutlineButton(
+                onPressed: () => _toPage(context, 14),
+                child: Text(
+                  'loading',
+                ),
               ),
-            ),
-            OutlineButton(
-              onPressed: () => _toPage(context, 15),
-              child: Text(
-                '文字特效',
+              OutlineButton(
+                onPressed: () => _toPage(context, 15),
+                child: Text(
+                  '文字特效',
+                ),
               ),
-            )
-          ],
+              OutlineButton(
+                onPressed: () => _toPage(context, 16),
+                child: Text(
+                  '手势密码',
+                ),
+              ),
+              OutlineButton(
+                onPressed: () => _toPage(context, 17),
+                child: Text(
+                  'viewpager 指示器',
+                ),
+              ),
+              OutlineButton(
+                onPressed: () => _toPage(context, 18),
+                child: Text(
+                  '快速选择列表',
+                ),
+              )
+            ],
+          ),
         ),
       ),
     );
@@ -204,6 +230,15 @@ class MyHomePage extends StatelessWidget {
         break;
       case 15:
         toPage = DemoPage15();
+        break;
+      case 16:
+        toPage = DemoPage16();
+        break;
+      case 17:
+        toPage = DemoPage17();
+        break;
+      case 18:
+        toPage = DemoPage18();
         break;
     }
     if (toPage != null) {
