@@ -126,7 +126,14 @@ packages:
       name: flutter_spinkit
       url: "https://pub.flutter-io.cn"
     source: hosted
-    version: "4.0.0"
+    version: "4.1.0"
+  flutter_staggered_animations:
+    dependency: "direct main"
+    description:
+      name: flutter_staggered_animations
+      url: "https://pub.flutter-io.cn"
+    source: hosted
+    version: "0.1.2"
   flutter_test:
     dependency: "direct dev"
     description: flutter
@@ -306,5 +313,5 @@ packages:
     source: hosted
     version: "2.0.8"
 sdks:
-  dart: ">=2.3.0 <3.0.0"
+  dart: ">=2.5.0 <3.0.0"
   flutter: ">=1.5.0 <2.0.0"

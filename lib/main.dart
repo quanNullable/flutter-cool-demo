@@ -12,7 +12,9 @@ import 'demo15/demo_page15.dart';
 import 'demo16/demo_page16.dart';
 import 'demo17/demo_page17.dart';
 import 'demo18/demo_page18.dart';
+import 'demo19/demo.dart';
 import 'demo2/demo_page2.dart';
+import 'demo20/demo_page20.dart';
 import 'demo3/demo_page3.dart';
 import 'demo4/demo_page4.dart';
 import 'demo5/demo_page5.dart';
@@ -170,6 +172,18 @@ class MyHomePage extends StatelessWidget {
                 child: Text(
                   '快速选择列表',
                 ),
+              ),
+              OutlineButton(
+                onPressed: () => _toPage(context, 19),
+                child: Text(
+                  '列表加载动画',
+                ),
+              ),
+              OutlineButton(
+                onPressed: () => _toPage(context, 20),
+                child: Text(
+                  '文字特效2',
+                ),
               )
             ],
           ),
@@ -239,6 +253,12 @@ class MyHomePage extends StatelessWidget {
         break;
       case 18:
         toPage = DemoPage18();
+        break;
+      case 19:
+        toPage = DemoPage19();
+        break;
+      case 20:
+        toPage = DemoPage20();
         break;
     }
     if (toPage != null) {
